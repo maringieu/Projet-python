@@ -9,19 +9,17 @@ wordliste = ['Your sister', 'Your dad',
             'is like',
             'eats',
             'loves',
-            'sniff',
+            'smell',
             'is',
-            'a fish',
+            'a bear',
             'a dog',
             'the floor',
             'big',
             'a trash',
-            'an empty hole',
             'idiot',
             'hairless',
             'abandoned',
             'lost',
-            'rotten',
             'so stupid',
             'so hard',
             'and',
@@ -68,31 +66,34 @@ while choix != "Q" :
 
         choix2 = "x"
         while choix2 != "Q":
+            print("le joueur 1 doit choisir une action : ")
             print("choisir une insulte, tapez : 1") 
             print("arretez la partie, tapez : 2")
             print("Quitter, tapez : Q")
             choix2 = input("votre choix : ")
 
             if choix2 == "1":
+                
                 print("le joueur 1 choisit une insulte: ")
                 print("")
                 print(wordliste)
-                choix3 = input()
+                choix3 = input("Votre choix : ")
                 for k in wordliste:
-                    if k== choix3 :
+                    if k == choix3 :
                         listP1.append(choix3)
                         wordliste.remove(choix3)    
                     else:
                         print(wordliste)
             elif choix2 == "2":
 
-                print(listP1)
-                print(listP2)
+                print("phrase joueur 1 :" , listP1)
+                print("phrase joueur 2 :" , listP2)
                 break 
 
 
             choix0 = "x"
             while choix0 != "Q":
+                print("le joueur 2 doit choisir une action : ")
                 print("choisir une insulte, tapez : 1") 
                 print("arretez la partie, tapez : 2")
                 print("Quitter, tapez : Q")
@@ -102,7 +103,7 @@ while choix != "Q" :
                     print("le joueur 2 choisit une insulte: ")
                     print("")
                     print(wordliste)
-                    choix4 = input()
+                    choix4 = input("votre choix :")
                     for k in wordliste:
                         if k == choix4 :
                             listP2.append(choix4)
@@ -111,8 +112,8 @@ while choix != "Q" :
                             print(wordliste)        
                 elif choix0 == "2":
 
-                    print(listP1)
-                    print(listP2)
+                    print("phrase joueur 1 :" , listP1)
+                    print("phrase joueur 2 :" , listP2)
                     break   
                 break
               
